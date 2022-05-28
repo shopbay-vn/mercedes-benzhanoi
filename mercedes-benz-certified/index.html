@@ -1313,45 +1313,7 @@ Hotline: 098 188 1215<br>Email: thietkes1@gmail.com
 	     class="lightbox-by-id lightbox-content mfp-hide lightbox-white "
 	     style="max-width:600px ;padding:20px">
 			</div>
-			<script>
-			// Auto open lightboxes
-			jQuery(document).ready(function ($) {
-				/* global flatsomeVars */
-				'use strict'
-				var cookieId = 'lightbox_popup'
-				var cookieValue = 'opened_1'
-				var timer = parseInt('3000')
 
-				// Auto open lightbox
-								cookie(cookieId, false)
-
-				// Run lightbox if no cookie is set
-				if (cookie(cookieId) !== cookieValue) {
-
-					// Ensure closing off canvas
-					setTimeout(function () {
-						jQuery.magnificPopup.close()
-					}, timer - 350)
-
-					// Open lightbox
-					setTimeout(function () {
-						$.magnificPopup.open({
-							midClick: true,
-							removalDelay: 300,
-							// closeBtnInside: flatsomeVars.lightbox.close_btn_inside,
-							// closeMarkup: flatsomeVars.lightbox.close_markup,
-							items: {
-								src: '#popup',
-								type: 'inline'
-							}
-						})
-					}, timer)
-
-					// Set cookie
-					cookie(cookieId, cookieValue, 365)
-				}
-			})
-		</script>
 
 
 
